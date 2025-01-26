@@ -13,7 +13,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background-color: #f4f4f9;
+      background-color: black;
     }
 
     .form-container {
@@ -24,11 +24,15 @@
       border-radius: 8px;
       overflow: hidden;
       text-align: center;
+      background-color: black;
     }
 
     .form-container img {
-      width: 100%;
+      width: 55%;
       height: auto;
+      background-color: grey;
+      border-radius: 30%;
+      
     }
 
     .form-content {
@@ -37,16 +41,16 @@
 
     .form-content h1 {
       font-size: 1.5rem;
-      color: #333;
+      color: white;
       margin-bottom: 10px;
     }
 
     .form-content p {
       font-size: 0.9rem;
-      color: #555;
+      color: white;
       margin-bottom: 20px;
     }
-
+   
     form {
       display: flex;
       flex-direction: column;
@@ -70,7 +74,7 @@
       display: flex;
       align-items: center;
       font-size: 0.9rem;
-      color: #333;
+      color: white;
       margin-bottom: 20px;
     }
 
@@ -92,15 +96,16 @@
 </head>
 <body>
   <div class="form-container">
-    <img src="AirFoxex" alt="Sorteo" id="sorteo-img"> <!-- Reemplaza con la URL de tu imagen -->
+    <img src="AirFoxex.png" alt="Sorteo" id="img"> <!-- Reemplaza con la URL de tu imagen -->
     <div class="form-content">
       <h1>Participa en nuestro sorteo</h1>
-      <p>¡Por solo 1 euro puedes ganar un increíble premio!</p>
+      <p>¡Por solo 1 euro puedes ganar este premio!</p>    
       <form>
         <input type="text" name="nombre" placeholder="Nombre" required>
         <input type="text" name="apellido" placeholder="Apellido" required>
         <input type="tel" name="telefono" placeholder="Número de Teléfono" required>
         <input type="email" name="correo" placeholder="Correo Electrónico" required>
+        <p>Cuando se realize la subscripcion se mandara un enlace para el pago del sorteo</p>
         <label>
           <input type="checkbox" name="terminos" required>
           Acepto los términos y condiciones
