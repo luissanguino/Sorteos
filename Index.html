@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f9;
+    }
+
+    .form-container {
+      width: 90%;
+      max-width: 400px;
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .form-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .form-content {
+      padding: 20px;
+    }
+
+    .form-content h1 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .form-content p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    form input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    form label {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    form button {
+      padding: 12px;
+      font-size: 1rem;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="" alt="Sorteo" id="sorteo-img"> <!-- Reemplaza con la URL de tu imagen -->
+    <div class="form-content">
+      <h1>Participa en nuestro sorteo</h1>
+      <p>¡Por solo 1 euro puedes ganar un increíble premio!</p>
+      <form>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellido" placeholder="Apellido" required>
+        <input type="tel" name="telefono" placeholder="Número de Teléfono" required>
+        <input type="email" name="correo" placeholder="Correo Electrónico" required>
+        <label>
+          <input type="checkbox" name="terminos" required>
+          Acepto los términos y condiciones
+        </label>
+        <button type="submit">Participar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
