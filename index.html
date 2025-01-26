@@ -32,7 +32,6 @@
       height: auto;
       background-color: grey;
       border-radius: 30%;
-      
     }
 
     .form-content {
@@ -50,7 +49,7 @@
       color: white;
       margin-bottom: 20px;
     }
-   
+
     form {
       display: flex;
       flex-direction: column;
@@ -99,13 +98,13 @@
     <img src="AirFoxex" alt="Sorteo" id="img"> <!-- Reemplaza con la URL de tu imagen -->
     <div class="form-content">
       <h1>Participa en nuestro sorteo</h1>
-      <p>¡Por solo 1 euro puedes ganar este premio!</p>    
-      <form>
+      <p>¡Por solo 1 euro puedes ganar el premio del anuncio!</p>    
+      <form action="https://formspree.io/f/mqaeenal" method="POST">
         <input type="text" name="nombre" placeholder="Nombre" required>
         <input type="text" name="apellido" placeholder="Apellido" required>
         <input type="tel" name="telefono" placeholder="Número de Teléfono" required>
         <input type="email" name="correo" placeholder="Correo Electrónico" required>
-        <p>Cuando se realize la subscripcion se mandara un enlace para el pago del sorteo</p>
+        <p>Cuando se realice la suscripción se mandará un enlace para el pago del sorteo.</p>
         <label>
           <input type="checkbox" name="terminos" required>
           Acepto los términos y condiciones
