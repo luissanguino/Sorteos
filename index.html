@@ -10,8 +10,7 @@
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
       min-height: 100vh;
       background-color: black;
     }
@@ -25,6 +24,7 @@
       overflow: hidden;
       text-align: center;
       background-color: black;
+      margin: auto;
     }
 
     .form-container img {
@@ -91,6 +91,19 @@
     form button:hover {
       background-color: #45a049;
     }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-top: 1px solid #ccc;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -113,9 +126,9 @@
       </form>
     </div>
   </div>
-  <footer style="text-align: center; padding: 10px; background-color: #f1f1f1; border-top: 1px solid #ccc; margin-top: 20px;">
+  <footer>
     <p>&copy; AirFoxex 2020</p>
-    <a href="/privacidad" style="color: #007BFF; text-decoration: none;">Derechos de privacidad</a>
-</footer>
+    <a href="/privacidad">Derechos de privacidad</a>
+  </footer>
 </body>
 </html>
